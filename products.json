@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "น้ำผึ้งแบบขวดเล็ก",
+    "mood": "small",
+    "size": "230 กรัม",
+    "price": null,
+    "image": "images/small.jpg",
+    "description": "On-the-Go & Trial / Light & Friendly ขนาดพอดีมือ เหมาะกับการลองครั้งแรก พกติดกระเป๋า หรือเป็นของฝากชิ้นเล็กๆ"
+  },
+  {
+    "id": 2,
+    "name": "น้ำผึ้งแบบขวดใหญ่",
+    "mood": "large",
+    "size": "770 กรัม",
+    "price": null,
+    "image": "images/large.jpg",
+    "description": "Everyday Kitchen / Warm & Generous ขวดใหญ่สำหรับครัวที่ใช้น้ำผึ้งเป็นประจำ ทั้งชงเครื่องดื่ม ทำอาหาร และราดขนม"
+  },
+  {
+    "id": 3,
+    "name": "น้ำผึ้งแบบหลอดบีบ",
+    "mood": "squeeze tube",
+    "size": "120 กรัม",
+    "price": null,
+    "image": "images/squeeze tube.jpg",
+    "description": "Clean & Effortless / Playful & Practical บีบใช้ได้สะดวก ไม่เลอะมือ ควบคุมปริมาณได้ง่าย"
+  }
+]

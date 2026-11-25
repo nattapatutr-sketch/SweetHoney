@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sweet Honey — ความหวานละมุนจากธรรมชาติ</title>
+  <meta name="description" content="Sweet Honey น้ำผึ้งให้ความหวานละมุนจากธรรมชาติ เลือกได้ทั้งขวดใหญ่ ขวดเล็ก และหลอดบีบ">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-specific touches for index.html */
+    .nav a[aria-current="page"] { color: var(--ink); }
+    .nav a[aria-current="page"]::after { transform: scaleX(1); }
+
+    .hero--full {
+      display: flex;
+      align-items: center;
+      min-height: calc(100svh - 5.5rem);
+    }
+    .hero--full .container {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+    .hero--full h1 {
+      max-width: 44rem;
+      margin-inline: auto;
+      font-size: clamp(1.875rem, 1.3rem + 2.4vw, 3.25rem);
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .mood-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+    }
+    .mood-card {
+      display: flex;
+      flex-direction: column;
+      padding: var(--space-4) var(--space-3);
+      background: var(--white);
+      border: var(--hairline) solid var(--line);
+      border-radius: var(--radius);
+      color: inherit;
+      text-decoration: none;
+      transition: border-color 0.25s ease;
+    }
+    .mood-card:hover { border-color: var(--line-strong); }
+    .mood-card h3 { margin-bottom: var(--space-2); }
+    /* Short thin rule under the heading carries the mood color */
+    .mood-card h3::after {
+      content: "";
+      display: block;
+      width: 2.5rem;
+      height: 2px;
+      margin-top: var(--space-2);
+      background: var(--mood);
+    }
+    .mood-card p {
+      flex: 1;
+      font-size: 0.9375rem;
+    }
+
+    @media (max-width: 62rem) {
+      .mood-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Sweet Honey</a>
+      <ul class="nav">
+        <li><a href="index.html" aria-current="page">หน้าแรก</a></li>
+        <li><a href="product.html">สินค้า</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--full">
+      <div class="container center">
+        <h1>Sweet Honey เติมความหวานละมุนจากธรรมชาติให้ทุกเมนูและทุกช่วงเวลาของวัน ในสไตล์ที่เป็นคุณกับ Sweet Honey</h1>
+        <a class="btn" href="product.html">ดูสินค้าทั้งหมด</a>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="moods">
+      <div class="container">
+        <div class="section-head center">
+          <h2>เลือกให้เข้ากับการใช้งานของคุณ</h2>
+          <p>เลือกดูสินค้าตามรูปแบบที่เหมาะกับชีวิตประจำวันของคุณ</p>
+        </div>
+
+        <div class="mood-grid">
+          <a class="mood-card" data-mood="large" href="product.html?mood=large">
+            <h3>ขวดใหญ่ 770 กรัม</h3>
+            <span class="mood-tag"><span class="mood-dot"></span>Everyday Kitchen / Warm &amp; Generous</span>
+            <p>ขวดทรงสูงฝาเกลียวสีเหลืองที่คุ้มค่าและพร้อมอยู่คู่ครัวในทุกวัน เหมาะสำหรับผู้ที่ใช้น้ำผึ้งเป็นประจำและต้องการความสะดวกสบายแบบใช้งานต่อเนื่อง</p>
+            <span class="muted">ดูสินค้าขวดใหญ่</span>
+          </a>
+
+          <a class="mood-card" data-mood="small" href="product.html?mood=small">
+            <h3>ขวดเล็ก 230 กรัม</h3>
+            <span class="mood-tag"><span class="mood-dot"></span>On-the-Go &amp; Trial / Light &amp; Friendly</span>
+            <p>ขนาดกะทัดรัด น้ำหนักเบา และจัดเก็บง่ายในฝาเกลียวสีเหลือง เหมาะสำหรับพกพาไปได้ทุกที่หรือเริ่มต้นทดลองความหวานละมุนได้สะดวก</p>
+            <span class="muted">ดูสินค้าขวดเล็ก</span>
+          </a>
+
+          <a class="mood-card" data-mood="squeeze tube" href="product.html?mood=squeeze-tube">
+            <h3>หลอดบีบ 120 กรัม</h3>
+            <span class="mood-tag"><span class="mood-dot"></span>Clean &amp; Effortless / Playful &amp; Practical</span>
+            <p>ดีไซน์หลอดบีบฝาเปิดปิดด้านล่างที่ช่วยควบคุมปริมาณได้แม่นยำและลดความเลอะเทอะ เหมาะสำหรับราดบนอาหารหรือเครื่องดื่มได้ง่ายในทุกวัน</p>
+            <span class="muted">ดูสินค้าหลอดบีบ</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Sweet Honey</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
